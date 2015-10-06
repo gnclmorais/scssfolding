@@ -6,6 +6,7 @@
   "scripts": {
     "build-css": "./bin/build",
     "watch-css": "./bin/watch",
+    "clean-css": "./bin/clean",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

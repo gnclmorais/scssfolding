@@ -10,7 +10,7 @@ Just clone this and you’re set to build stuff.
 - [ ] Minify
 - [ ] …
 
-## Aknowledgements
+## Acknowledgements
 - Most of this setup was inspired by [Brian Han][1]’s [Medium article][2].
 
   [1]: https://twitter.com/thisisbrianhan

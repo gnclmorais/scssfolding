@@ -7,8 +7,8 @@ Just clone this and you’re set to build stuff.
 1. Run `npm install`
 1. Run `npm run watch-css`
 1. A browser window should have opened `http://localhost:3000/`.
-Now every time you change and save `scss/main.scss`, that page will reload
-automatically and show you your latest SCSS changes.
+Now every time you change `scss/main.scss` or `index.html`, that page will
+reload automatically and show you your latest SCSS changes.
 
 
 ## Commands

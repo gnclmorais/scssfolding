@@ -1,1 +1,1 @@
-node-sass --include-path scss scss/main.scss public/css/main.css --output-style expanded
+node_modules/node-sass/bin/node-sass --include-path scss scss/main.scss public/css/main.css --output-style expanded

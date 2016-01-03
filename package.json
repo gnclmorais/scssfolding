@@ -1,6 +1,6 @@
 {
   "name": "SCSSfolding",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Simple boilerplate project to jumpstart SCSS/Sass experiments.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "watch-css": "./bin/watch",
     "clean-css": "./bin/clean",
     "minify-css": "./bin/minify",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Sorry, no tests here.\" && exit 0"
   },
   "repository": {
     "type": "git",

@@ -7,6 +7,7 @@
     "build-css": "./bin/build",
     "watch-css": "./bin/watch",
     "clean-css": "./bin/clean",
+    "minify-css": "./bin/minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,7 +27,10 @@
   },
   "homepage": "https://github.com/gnclmorais/scssfolding",
   "devDependencies": {
+    "browser-sync": "^2.10.1",
+    "clean-css": "^3.4.9",
     "node-sass": "^3.3.3",
     "nodemon": "^1.7.1"
-  }
+  },
+  "dependencies": {}
 }

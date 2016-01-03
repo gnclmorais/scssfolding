@@ -6,9 +6,8 @@ Just clone this and you’re set to build stuff.
 - [x] Build
 - [x] Watch
 - [x] Clean
-- [ ] Reload
+- [x] Reload
 - [ ] Minify
-- [ ] …
 
 ## Acknowledgements
 - Most of this setup was inspired by [Brian Han][1]’s [Medium article][2].

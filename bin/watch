@@ -1,1 +1,2 @@
+open index.html
 nodemon -e scss -x 'npm run build-css'

@@ -27,5 +27,4 @@ build/Release
 node_modules
 
 # SCSS & CSS folders
-scss
 public

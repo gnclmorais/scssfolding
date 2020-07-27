@@ -1,36 +1,28 @@
-.link-github {
+.link-github,
+.link-twittercontact,
+.link-rss,
+.link-support {
   @extend .nes-btn;
+
+  display: block;
+}
+
+.link-github {
   // @extend .nes-icon;
   // @extend .star;
-
-  text-decoration: none;
-  display: inline;
-  padding-left: 30px;
-
-  &::before {
-    top: 10px;
-    left: 5px;
-  }
 
   // Hide elements we don't use
   span, svg { display: none; }
 }
 
 .link-twittercontact {
-  @extend .nes-btn;
   @extend .is-primary;
 }
 
 .link-rss {
-  @extend .nes-btn;
   @extend .is-warning;
-
-  display: block;
 }
 
 .link-support {
-  @extend .nes-btn;
   @extend .is-success;
-
-  display: block;
 }

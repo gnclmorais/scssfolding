@@ -1,0 +1,32 @@
+nav {
+  background: black;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3em 1em;
+  }
+
+  li a {
+    &:focus {
+      color: black;
+      background: white;
+    }
+
+    &:not(:focus) {
+      color: white;
+      background: black;
+    }
+  }
+}
+
+a {
+  &:target {
+    color: rebeccapurple;
+    background: red;
+  }
+}

@@ -2,11 +2,13 @@
 // TODO: cursor
 @import "../node_modules/nes.css/scss/base/color-palette";
 @import "../node_modules/nes.css/scss/base/variables";
+@import "../node_modules/nes.css/scss/utilities/icon-mixin";
 @import "../node_modules/nes.css/scss/utilities/rounded-corners-mixin";
 
 @import "../node_modules/nes.css/scss/elements/balloons";
 @import "../node_modules/nes.css/scss/elements/buttons";
 @import "../node_modules/nes.css/scss/elements/containers";
+@import "../node_modules/nes.css/scss/elements/lists";
 
 @import "../node_modules/nes.css/scss/utilities/icon-mixin";
 @import "../node_modules/nes.css/scss/icons/icons";
@@ -17,5 +19,6 @@
 
 @import "buttons";
 @import "links";
+@import "lists";
 @import "blockquotes";
 @import "navigation";

@@ -1,0 +1,10 @@
+#about .containare + .container {
+  ul {
+    @extend .nes-list;
+    @extend .is-disc;
+
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr;
+    // TODO: Smaller screens
+  }
+}

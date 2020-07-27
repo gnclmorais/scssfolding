@@ -1,3 +1,10 @@
+.link-downloadcss,
+.link-downloadhtml,
+.link-codepen {
+  @extend .nes-btn;
+
+}
+
 .link-github,
 .link-twittercontact,
 .link-rss,

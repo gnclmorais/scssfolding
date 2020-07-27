@@ -3,7 +3,7 @@
 
 html {
   font-family: 'VT323', monospace;
-  font-size: 30px;
+  font-size: clamp(20px, 2.5vw, 30px);
 }
 
 h1,
@@ -14,9 +14,16 @@ h5,
 h6 {
   font-family: 'Press Start 2P', cursive;
   line-height: 1.5em;
+  overflow-wrap: anywhere;
 }
 
 h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
 h2,
 h3,
 h4 {

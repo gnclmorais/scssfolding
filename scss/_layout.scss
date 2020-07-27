@@ -1,3 +1,9 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   scroll-behavior: smooth;
   display: flex;
@@ -7,19 +13,139 @@ html {
 
 body {
   max-width: 1200px;
+  padding: 0 1rem;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+
+// Section: Source Files
 
 #files .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
 
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+
   h3 {
     grid-column: 1 / 4;
     grid-row: 1;
+
+    @media (max-width: 600px) {
+      grid-column: unset;
+    }
   }
 
   a {
     grid-row: 2;
+
+    @media (max-width: 600px) {
+      grid-row: unset;
+    }
+  }
+}
+
+
+// Section: Featured Styles
+
+#styles {
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .link-allstyles {
+      margin: 0 auto;
+    }
+  }
+
+  ul.features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    @extend .nes-balloon;
+
+    width: 50%;
+
+    &:nth-child(odd) {
+      @extend .from-left;
+    }
+    &:nth-child(even) {
+      @extend .from-right;
+
+      text-align: right;
+      align-self: flex-end;
+    }
+  }
+}
+
+
+// Section: Guidelines
+
+#guidelines .container {
+  display: flex;
+  flex-direction: column;
+
+  .link-guidelines {
+    align-self: center;
+  }
+}
+
+
+// Section: Currently Staged Style
+.profile .container {
+  margin-top: 2rem;
+  display: flex;
+  position: relative;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+
+  > * {
+    flex-basis: 50%;
+    flex-grow: 1;
+  }
+
+  > h4 {
+    margin: 0;
+    text-align: right;
+
+    @media (max-width: 600px) {
+      text-align: center;
+    }
+  }
+
+  > ul {
+    margin: 0;
+    list-style: none;
+
+    @media (max-width: 600px) {
+      margin: 1rem 0;
+    }
+
+    li > span:first-child {
+      text-decoration: underline;
+    }
+  }
+
+  > a {
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+
+    @media (max-width: 600px) {
+      position: static;
+      text-align: center;
+    }
   }
 }

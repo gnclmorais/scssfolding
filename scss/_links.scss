@@ -1,4 +1,32 @@
 a {
   text-decoration: none;
   color: red;
+
+  &:focus,
+  &:hover {
+    background-image: linear-gradient(
+      90deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3
+    );
+    background-size: 1800% 1800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 2s linear infinite;
+  }
+}
+
+@keyframes rainbow {
+      0% { background-position:   0% 82% }
+     50% { background-position: 100% 19% }
+    100% { background-position:   0% 82% }
+}
+
+.skip-link {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  transform: translateY(-200%);
+
+  &:focus {
+    transform: translateY(0%);
+  }
 }

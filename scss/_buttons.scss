@@ -1,8 +1,20 @@
+.link-guidelines,
 .link-downloadcss,
 .link-downloadhtml,
-.link-codepen {
+.link-codepen,
+.link-allstyles {
   @extend .nes-btn;
 
+  margin: 0;
+  transition: transform;
+
+  &:hover {
+    transform: scale(0.98);
+  }
+}
+
+.link-guidelines {
+  margin: 0 auto;
 }
 
 .link-github,
@@ -12,6 +24,11 @@
   @extend .nes-btn;
 
   display: block;
+  transition: transform;
+
+  &:hover {
+    transform: scale(0.98);
+  }
 }
 
 .link-github {
@@ -22,10 +39,16 @@
   span, svg { display: none; }
 }
 
+.link-downloadcss,
+.link-downloadhtml {
+  @extend .is-error;
+}
+
 .link-twittercontact {
   @extend .is-primary;
 }
 
+.link-codepen,
 .link-rss {
   @extend .is-warning;
 }

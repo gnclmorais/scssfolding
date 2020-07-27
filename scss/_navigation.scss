@@ -3,30 +3,36 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1;
+  margin: 0 -1rem;
 
   ul {
     list-style: none;
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     padding: 0.3em 1em;
+
+    @media (max-width: 1150px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   li a {
+    color: white;
+    background: black;
+
     &:focus {
       color: black;
-      background: white;
+      background: grey;
     }
 
-    &:not(:focus) {
-      color: white;
-      background: black;
-    }
-  }
-}
-
-a {
-  &:target {
-    color: rebeccapurple;
-    background: red;
+    // TODO: hover
   }
 }

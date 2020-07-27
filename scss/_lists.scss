@@ -1,10 +1,17 @@
-#about .containare + .container {
+#about .container + .container {
   ul {
     @extend .nes-list;
     @extend .is-disc;
 
     display: grid;
     grid-template-columns: 3fr 3fr 2fr;
-    // TODO: Smaller screens
+
+    @media (max-width: 1150px) {
+      grid-template-columns: 3fr 2fr;
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
   }
 }

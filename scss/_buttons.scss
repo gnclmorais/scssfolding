@@ -32,8 +32,10 @@
 }
 
 .link-github {
-  // @extend .nes-icon;
-  // @extend .star;
+  // &::before {
+  //   @extend .nes-icon;
+  //   @extend .star;
+  // }
 
   // Hide elements we don't use
   span, svg { display: none; }

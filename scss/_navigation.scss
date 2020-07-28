@@ -29,10 +29,7 @@ nav {
     background: black;
 
     &:focus {
-      color: black;
-      background: grey;
+      border: 1px solid grey;
     }
-
-    // TODO: hover
   }
 }

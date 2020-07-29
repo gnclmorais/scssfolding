@@ -10,7 +10,7 @@ a {
     background-size: 1800% 1800%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: rainbow 2s linear infinite;
+    animation: rainbow 5s linear 2;
 
     @media (prefers-reduced-motion) {
       animation: none;

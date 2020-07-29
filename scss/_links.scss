@@ -11,6 +11,10 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: rainbow 2s linear infinite;
+
+    @media (prefers-reduced-motion) {
+      animation: none;
+    }
   }
 }
 
